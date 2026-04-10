@@ -1,59 +1,77 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velvet Brew Café</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>This is my first simple website</p>
-    </header>
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>Velvet Brew</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">About Us</a></li>
+        <li><a href="#features">Location</a></li>
+        <li><a href="#features">Ratings</a></li>
+    </ul>
+</div>
 
-    <main>
-        <h2>Hello User 👋</h2>
-        <p>Click the button below</p>
+<!-- HERO -->
+<section class="hero fade">
+    <h1>VELVET BREW</h1>
 
-        <button onclick="showMessage()">Click Me</button>
+    <img src="logo.png" class="logo" alt="Velvet Brew Logo">
 
-        <p id="message"></p>
-    </main>
+    <p class="tagline">“Brewed with Love, Served with Comfort”</p>
 
-    <script>
-        function showMessage() {
-            document.getElementById("message").innerHTML = "You clicked the button!";
-        }
-    </script>
+    <p class="desc">
+        More than just a café, we offer a complete experience where great coffee meets comfort, 
+        innovation, and creativity. Enjoy smart ordering, cozy spaces, and vibrant corners 
+        designed for relaxation, connection, and fun—making every visit truly unforgettable.
+    </p>
+
+    <div class="cta">
+        <button onclick="scrollToSection()">Let’s Brew !</button>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+    <h2>Crafted Just For You</h2>
+
+    <div class="grid">
+        <div class="card fade"><span>☕</span>Premium Coffee Experience</div>
+        <div class="card fade"><span>📱</span>Smart QR Ordering</div>
+        <div class="card fade"><span>🎯</span>Personalized Menu</div>
+        <div class="card fade"><span>🛋</span>Cozy Seating Spaces</div>
+        <div class="card fade"><span>📸</span>Instagram Ambiance</div>
+        <div class="card fade"><span>👨‍👩‍👧</span>Family Friendly Area</div>
+        <div class="card fade"><span>🌱</span>Eco-Friendly Practices</div>
+        <div class="card fade"><span>🎤</span>Community Events</div>
+        <div class="card fade"><span>⚡</span>Quick Service</div>
+        <div class="card fade"><span>🔥</span>Live Brewing Experience</div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>📞 +91 9876543210</p>
+    <p>📧 contact@velvetbrew.com</p>
+    <p>📍 Near High street R City Mall, Lower Parel, Mumbai - 400013</p>
+    <p>© 2026 Velvet Brew Café</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
 
 </body>
 </html>
